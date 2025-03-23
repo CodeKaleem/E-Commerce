@@ -1,4 +1,5 @@
 'use client'
+import AddToCart from "@/app/Components/AddtoCart";
 import { motion } from "framer-motion";
 
 
@@ -23,6 +24,7 @@ export default function ImagePage() {
                 transition={{ duration: 0.8 }}
             >
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                
                     Welcome to Our Store
                 </h1>
                 <p className="text-lg md:text-xl mb-6">
@@ -33,7 +35,9 @@ export default function ImagePage() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                 >
+                    
                     Shop Now
+                
                 </motion.button>
             </motion.div>
 

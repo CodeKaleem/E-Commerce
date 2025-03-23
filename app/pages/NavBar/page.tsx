@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import AddToCart from "@/app/Components/AddtoCart";
 
 
 const NavBar = () => {
@@ -14,7 +15,6 @@ const NavBar = () => {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            {/* Logo and Company Name */}
             <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black font-bold">
                     AL
@@ -22,7 +22,6 @@ const NavBar = () => {
                 <span className="text-xl font-semibold">CompanyName</span>
             </div>
 
-            {/* Hamburger Menu for Mobile */}
             <div className="md:hidden z-20">
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
