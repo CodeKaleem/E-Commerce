@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 export default function ImagePage() {
     return (
-        <div className="relative h-screen w-screen">
+        <div className="relative h-screen w-screen ml-[-15px]">
             {/* Background Image */}
             <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-cover bg-center w-full"
                 style={{
                     backgroundImage:
                         "url('https://images4.alphacoders.com/633/633440.jpg')",
@@ -18,7 +18,7 @@ export default function ImagePage() {
 
             {/* Overlay Content */}
             <motion.div
-                className="relative z-10 flex flex-col items-center justify-center h-full text-white hidden md:flex"
+                className="relative z-10 flex flex-col items-center justify-center h-full text-white hidden md:flex "
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
@@ -42,7 +42,6 @@ export default function ImagePage() {
             </motion.div>
 
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
     );
 }

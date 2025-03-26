@@ -16,10 +16,11 @@ const Product = () => {
             <section className="hero-section">
 
                 <div className="hero-text">
+                    <br />
                     <h1 className="text-4xl font-bold text-center p-6 ">
                         Welcome to Our Store
                     </h1>
-                    <p className="text-center text-lg mt-2">
+                    <p className="text-center text-lg mt-2 font-semibold">
                         Discover the best products at unbeatable prices.
                     </p>
                 </div>
@@ -53,10 +54,20 @@ const Product = () => {
                             </button>
                         </motion.div>
                     ))}
+                    <div className="flex justify-center mt-16 w-full col-span-3">
+                    <motion.button
+                    className="bg-white text-black font-semibold h-15 rounded-[14px] w-1/12"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    Shop Now
+                
+                </motion.button>
+                    </div>
                 </div>
                 
             </section>
-
+            
         </div>
     );
 };

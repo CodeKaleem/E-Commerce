@@ -1,11 +1,11 @@
+
 'use client';
 import React from 'react';
 
 
-
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: 'black', color: 'white', padding: '20px', textAlign: 'center', marginTop: '-200px' }}>
+        <footer style={{ backgroundColor: 'black', color: 'white', padding: '20px', textAlign: 'center', marginTop: 'auto' }}>
             <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '400px' }}>
                 {/* Social Media Links Section */}
                 <div>
@@ -26,7 +26,7 @@ const Footer = () => {
                     <h3>Freelance Platforms</h3>
                     <br />
                     <hr />
-                    <br />  
+                    <br />
                     <ul style={{ listStyleType: 'none', padding: 0 }}>
                         <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>GitHub</a></li>
                         <li><a href="https://fiverr.com" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>Fiverr</a></li>
@@ -46,9 +46,9 @@ const Footer = () => {
                     <p>Address: 123 E-Commerce St, Web City</p>
                 </div>
             </div>
-            <footer className="footer mt-10 py-6 bg-gray-800 text-white text-center">
+            <div className="footer mt-10 py-6 bg-gray-800 text-white text-center">
                 <p>&copy; 2025 E-commerce Website. All rights reserved.</p>
-            </footer>
+            </div>
         </footer>
     );
 };

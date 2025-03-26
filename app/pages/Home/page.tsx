@@ -1,10 +1,11 @@
 'use client'
 import React from "react";
 import { motion } from "framer-motion";
-import NavBar from "../NavBar/page";
-import Image1 from "../Image1/page";
-import Footer from "../Footer/page";
+import NavBar from "../../Components/NavBar";
+import Image1 from "../../Components/PImage";
+import Footer from "../../Components/Footer";
 import Product from "../Product/page";
+import AboutUs from "@/app/Components/Aboutus";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
                 <NavBar></NavBar>
                 <Image1></Image1>
                 <Product></Product>
+                <AboutUs></AboutUs>
                 <Footer></Footer>
         </div>
     );

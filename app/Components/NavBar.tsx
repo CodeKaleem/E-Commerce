@@ -15,11 +15,13 @@ const NavBar = () => {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black font-bold">
+            <div className="flex items-center space-x-3 cursor-pointer">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black font-bold text-lg">
                     AL
+                    
                 </div>
-                <span className="text-xl font-semibold">CompanyName</span>
+                
+                <span className="text-xl font-semibold corsor-pointer">CompanyName</span>
             </div>
 
             <div className="md:hidden z-20">
