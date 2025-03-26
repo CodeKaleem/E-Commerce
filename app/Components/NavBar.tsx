@@ -17,11 +17,13 @@ const NavBar = () => {
         >
             <div className="flex items-center space-x-3 cursor-pointer">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black font-bold text-lg">
-                    AL
+                    <img src="https://images.pexels.com/photos/889709/pexels-photo-889709.jpeg" 
+                     alt="img"
+                     className="rounded-full w-12 h-12" />
                     
                 </div>
                 
-                <span className="text-xl font-semibold corsor-pointer">CompanyName</span>
+                <span className="text-xl font-semibold corsor-pointer"><u><i>GunVault</i></u></span>
             </div>
 
             <div className="md:hidden z-20">
@@ -46,7 +48,7 @@ const NavBar = () => {
                 {["Home", "Services", "Help", "Contact"].map((item, index) => (
                     <motion.button
                         key={index}
-                        className="px-4 py-2 bg-white text-black rounded-full transition-all duration-300 md:w-auto"
+                        className="px-4 py-2 bg-white text-black rounded-full transition-all w-36 duration-300 md:w-auto"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         transition={{ duration: 0 }}
