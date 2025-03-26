@@ -10,10 +10,9 @@ const NavBar = () => {
 
     return (
         <motion.nav
-            className="w-full bg-black text-white flex items-center justify-between px-6 md:px-12 py-4"
-            initial={{ y: -100 }}
+            className="w-full bg-black text-white flex items-center justify-between px-6 md:px-12 py-4 font-sans"
+            initial={{ y: 0 }}
             animate={{ y: 0 }}
-            transition={{ duration: 0.5 }}
         >
             <div className="flex items-center space-x-3 cursor-pointer">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black font-bold text-lg">
@@ -45,9 +44,10 @@ const NavBar = () => {
                     isMenuOpen ? "flex" : "hidden"
                 } md:flex flex-col md:flex-row md:space-x-6 fixed md:static top-0 right-0 items-center justify-center h-screen md:h-auto w-1/2 md:w-auto gap-2 bg-black md:bg-transparent z-10 md:z-auto`}
             >
-                {["Home", "Services", "Help", "Contact"].map((item, index) => (
+                {["Home ", "Services", "Help", "Contact"].map((item, index) => (
                     <motion.button
                         key={index}
+                        onClick={index === 0 ? () => window.location.reload() : () => alert("Coming Soon!")}
                         className="px-4 py-2 bg-white text-black rounded-full transition-all w-36 duration-300 md:w-auto"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}

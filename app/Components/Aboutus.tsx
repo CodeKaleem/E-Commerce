@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-6 lg:px-20 bg-black">
+    <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-6 lg:px-20 bg-black font-sans">
       {/* Left Side Content */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -48,7 +48,7 @@ const AboutUs = () => {
         <img
           src="https://images.pexels.com/photos/889709/pexels-photo-889709.jpeg"
           alt="Firearms & Ammunition"
-          className="h-[80vh] w-auto lg:w-full object-cover rounded-lg shadow-lg"
+          className="h-[80vh] w-auto lg:w-full object-cover rounded-lg shadow-lg ml-2"
         />
       </motion.div>
     </section>

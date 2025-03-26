@@ -12,7 +12,7 @@ const Product = () => {
     ];
 
     return (
-        <div className="home-page bg-black text-white min-h-screen">
+        <div className="home-page bg-black text-white min-h-screen font-sans">
             <section className="hero-section">
 
                 <div className="hero-text">

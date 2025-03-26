@@ -5,7 +5,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: 'black', color: 'white', padding: '20px', textAlign: 'center', marginTop: 'auto' }}>
+        <footer style={{ backgroundColor: 'black', color: 'white', padding: '20px', textAlign: 'center', marginTop: 'auto', fontFamily: 'sans' }}>
             <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '400px' }}>
                 {/* Social Media Links Section */}
                 <div>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function ImagePage() {
     return (
-        <div className="relative h-screen w-screen ml-[-15px]">
+        <div className="relative h-screen w-screen ml-[-15px] font-sans">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center w-full"
@@ -19,7 +19,7 @@ export default function ImagePage() {
             {/* Overlay Content */}
             <motion.div
                 className="relative z-10 flex flex-col items-center justify-center h-full text-white hidden md:flex "
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 150 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
             >
@@ -34,6 +34,9 @@ export default function ImagePage() {
                     className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
+                    initial={{ opacity: 0 , y:0 ,x:-150}}
+                    animate={{ opacity: 1, y: 0 ,x:0}}
+                    transition={{ duration: 0.8 }}
                 >
                     
                     Shop Now
