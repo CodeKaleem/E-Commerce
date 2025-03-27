@@ -58,7 +58,7 @@ const Product = () => {
                     ))}
                     <div className="flex justify-center mt-16 w-full col-span-3">
                     <motion.button
-                    className="bg-white text-black font-semibold h-15 rounded-[14px] w-1/12"
+                    className="bg-white text-black font-semibold h-15 rounded-[14px] w-1/10"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={() => route.push("/pages/Products")}

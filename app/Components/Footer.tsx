@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaWhatsapp, FaEnvelope, FaGithub, FaPhone, FaM
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12 px-6">
+    <footer className="bg-black text-white py-12 px-6 font-sans">
         <hr />
         <br />
         <br />

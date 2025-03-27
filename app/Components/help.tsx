@@ -8,7 +8,7 @@ import { Share } from "next/font/google";
 const HelpPage = () => {
   const route = useRouter();
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white font-sans">
       {/* Hero Section */}
       <section className="relative w-full h-[60vh] flex items-center justify-center bg-cover bg-center" 
         style={{ backgroundImage: `url('https://images.pexels.com/photos/1094812/pexels-photo-1094812.jpeg')` }}>

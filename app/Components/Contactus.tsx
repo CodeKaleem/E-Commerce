@@ -21,7 +21,7 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-6 font-sans">
 
 <section className="bg-gray-800 py-12 mb-12">
               <h2 className="text-3xl font-semibold text-center mb-6">Contact Our Support Team</h2>

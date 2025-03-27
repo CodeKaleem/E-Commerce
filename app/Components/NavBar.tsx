@@ -11,7 +11,7 @@ const NavBar = () => {
 
     return (
         <motion.nav
-            className="w-full bg-black text-white flex items-center justify-between px-6 md:px-12 py-4 shadow-lg relative"
+            className="w-full bg-black text-white flex items-center justify-between px-6 md:px-12 py-4 shadow-lg relative font-sans"
             initial={{ y: 0, opacity: 1 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0 }}

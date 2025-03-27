@@ -51,7 +51,7 @@ const Cart = () => {
     return (
         <>
         <NavBar></NavBar>
-        <div className="flex flex-col items-center justify-center p-6 w-full min-h-screen bg-gray-900 text-white">
+        <div className="flex flex-col items-center justify-center p-6 w-full min-h-screen bg-gray-900 text-white font-sans">
                     
             <h1 className="text-3xl font-semibold mb-6">🛒 Your Cart</h1>
 
