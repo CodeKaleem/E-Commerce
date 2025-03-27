@@ -1,10 +1,9 @@
 import Image from "next/image";
-
-export default function Home() {
+import Home from "./pages/Home/page";
+export default function Main() {
   return (
-    <div className="container">
-      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />  
-      
+    <div>
+      <Home></Home>
     </div>
   );
 }

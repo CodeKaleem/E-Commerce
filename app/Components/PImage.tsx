@@ -1,10 +1,11 @@
 'use client'
 import AddToCart from "@/app/Components/AddtoCart";
 import { motion } from "framer-motion";
-
+import { useRouter } from "next/navigation";
 
 
 export default function ImagePage() {
+    const route = useRouter();
     return (
         <div className="relative h-screen w-screen ml-[-15px] font-sans">
             {/* Background Image */}
@@ -37,6 +38,7 @@ export default function ImagePage() {
                     initial={{ opacity: 0 , y:0 ,x:-150}}
                     animate={{ opacity: 1, y: 0 ,x:0}}
                     transition={{ duration: 0.8 }}
+                    onClick={() => {route.push("/pages/Products")}}
                 >
                     
                     Shop Now

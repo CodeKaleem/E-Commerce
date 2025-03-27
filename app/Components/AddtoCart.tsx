@@ -5,7 +5,7 @@ const AddToCart: React.FC = () => {
     const router = useRouter();
 
     const handleCartClick = () => {
-        router.push('/cart'); // Redirect to the cart page
+        router.push('/pages/cart');
     };
 
     return (
@@ -19,7 +19,7 @@ const AddToCart: React.FC = () => {
                 padding: '10px',
                 backgroundColor: '#27ae60',
                 borderRadius: '4px',
-                color: '#fff',
+                color: 'white',
                 fontSize: '1rem',
                 width: '100%',
                 maxWidth: '400px',
@@ -27,7 +27,7 @@ const AddToCart: React.FC = () => {
             }}
         >
             <img
-                src="https://www.shutterstock.com/shutterstock/videos/1100304697/thumb/12.jpg?ip=x480"
+                src="https://www.shutterstock.com/image-vector/trolley-icon-vector-illustration-logo-600nw-1660611499.jpg"
                 alt="Add to Cart"
                 style={{ width: '40px', height: '40px', backgroundColor: 'white' }}
             />

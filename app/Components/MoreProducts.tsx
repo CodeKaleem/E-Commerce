@@ -2,13 +2,19 @@
 'use client'
 import React from "react";
 import { motion } from "framer-motion";
+import { i } from "framer-motion/client";
+import { useRouter } from "next/navigation";
 
-
-const Product = () => {
+const MoreProduct = () => {
+    const route = useRouter();
     const products = [
         { id: 1, name: "M416", price: "$1000", description: "M416 Assult Riffle" , image: "https://media.istockphoto.com/id/1370127440/photo/m416-gun-automatic-weapon-isolated-black-military-army.jpg?b=1&s=612x612&w=0&k=20&c=gqXPOH08K1jON2pLvFnC7FMP3vdX3NDQl0ui8G_48dY="},
         { id: 2, name: "AK47", price: "$1500", description: "AK47 RIFLE", image: "https://c4.wallpaperflare.com/wallpaper/417/345/186/weapons-machine-kalashnikov-chinese-ak-47-wallpaper-preview.jpg" },
         { id: 3, name: "M249", price: "$2000", description: "M249 MACHINE GUN", image: "https://c4.wallpaperflare.com/wallpaper/321/947/737/gun-m249-machine-military-wallpaper-preview.jpg" },
+        { id: 4, name: "AWM", price: "$22000", description: "AWM Sniper" , image: "https://upload.wikimedia.org/wikipedia/commons/0/0f/AWM-338-white.jpg"},
+        { id: 5, name: "M24", price: "$15000", description: "M24 Sniper", image: "https://c4.wallpaperflare.com/wallpaper/656/851/580/gun-sniper-rifle-rifles-scopes-wallpaper-preview.jpg" },
+        { id: 6, name: "M82a1", price: "$12000", description: "Sniper Rifle", image: "https://w0.peakpx.com/wallpaper/460/98/HD-wallpaper-barrett-82a1-sniper-rifle-cartridges-sight-rifle-barrett.jpg" },
+    
     ];
 
     return (
@@ -54,17 +60,14 @@ const Product = () => {
                             </button>
                         </motion.div>
                     ))}
-                    <div className="flex justify-center mt-16 w-full col-span-3">
-                    <motion.button
-                    className="bg-white text-black font-semibold h-15 rounded-[14px] w-1/12"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    Shop Now
-                
-                </motion.button>
-                    </div>
                 </div>
+                <motion.button className="w-30 h-15 bg-gray-100 text-black font-semibold font-sans rounded-xl mx-auto mt-10 mb-0 block"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => {route.push("/pages/Contact")}}
+                
+                >Contact us</motion.button>
+                
                 
             </section>
             
@@ -72,4 +75,4 @@ const Product = () => {
     );
 };
 
-export default Product;
+export default MoreProduct;

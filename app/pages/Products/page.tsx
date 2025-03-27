@@ -6,17 +6,16 @@ import Image1 from "../../Components/PImage";
 import Footer from "../../Components/Footer";
 import Product from "../../Components/Product";
 import AboutUs from "@/app/Components/Aboutus";
+import MoreProducts from "@/app/Components/MoreProducts";
 
-const Home = () => {
+const Products = () => {
     return (
         <div className="home-page">
                 <NavBar></NavBar>
-                <Image1></Image1>
-                <Product></Product>
-                <AboutUs></AboutUs>
+                <MoreProducts></MoreProducts>
                 <Footer></Footer>
         </div>
     );
 };
 
-export default Home;
+export default Products;

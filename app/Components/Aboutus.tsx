@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const AboutUs = () => {
+  const route = useRouter();
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-6 lg:px-20 bg-black font-sans">
       {/* Left Side Content */}
@@ -25,12 +27,14 @@ const AboutUs = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             className="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition"
+            onClick={()=>route.push("/pages/Products")}
           >
             Explore Products
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.1 }}
             className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition"
+            onClick={()=>route.push("/pages/Contact")}
           >
             Contact Us
           </motion.button>
